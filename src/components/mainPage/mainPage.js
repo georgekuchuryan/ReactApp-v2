@@ -3,7 +3,7 @@ import styles from './mainPage.module.scss';
 import Catalog from '../Catalog/Catalog';
 
 const MainPage = () => (
-  <div className={styles.MainPage}>
+  <div classNameName={styles.MainPage}>
     
     <Catalog/>
   </div>

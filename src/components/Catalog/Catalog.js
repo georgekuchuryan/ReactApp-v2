@@ -32,15 +32,15 @@ const Catalog = () => {
     ];
 
 return(
-  <div className={styles.Catalog}>
-  <div class="album py-5 bg-light">
-    <div class="container">
+  <div classNameName={styles.Catalog}>
+  <div className="album py-5 bg-light">
+    <div className="container">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           {
           productList.map(item => {
             return (
-              <div class="col">
+              <div className="col" key={item.id}>
             <CatalogItem name={item.name}
               brand={item.brand}
               price={item.price}/>
