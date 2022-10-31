@@ -3,10 +3,11 @@ import styles from "./Header.module.scss";
 import Menu from "../Menu/Menu";
 
 const Header = () => (
-  <div classNameName={styles.Header}>
-    <header classNameName="p-3 text-bg-dark">
-      <div classNameName="container">
-        <div classNameName="d-flex flex-wrap align-items-center justify-content-center justify-content-start">
+  <div className={styles.Header}>
+    <header className="p-3 text-bg-dark">
+      <div className="container">
+        <div className={styles.logo}>Mobile Devices</div>
+        <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-start">
           <svg
             href="http://www.apple.com"
             xmlns="http://www.w3.org/2000/svg"
@@ -22,11 +23,11 @@ const Header = () => (
 
           <Menu />
 
-          <div classNameName="text-end">
+          <div className="text-end">
             <button type="button" className="btn btn-primary">
               Login
             </button>
-            <button type="button" classNameName="btn btn-warning">
+            <button type="button" className="btn btn-warning">
               Sign-up
             </button>
           </div>

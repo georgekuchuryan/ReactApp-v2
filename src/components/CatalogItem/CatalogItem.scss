@@ -1,6 +1,21 @@
-.CatalogItem {
+.CatalogItem {}
 
+
+.textPrice{
+color: red;
+font-size: large;
 }
-.red{
-    color: red;
+
+
+.imgPans{
+    width: 250px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 10px;
+}
+.card-body{
+
+        height: 100%;
 }
