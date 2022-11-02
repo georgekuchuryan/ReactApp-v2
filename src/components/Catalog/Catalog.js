@@ -11,9 +11,41 @@ const Catalog = () => {
 
   const [brandListFilter, setBrandListFilter] = useState([]);
 
+
+// // 
+//   const [productColor, setProductColor] = useState([]);
+// // 
+
+
+//     // 
+//   useEffect(() => {
+//     createColorFilter();
+//   }, []);
+// // 
+
   useEffect(() => {
     createBrandFilter();
   }, []);
+
+// // 
+// const createColorFilter =() =>{
+//   const colors = data.productList.map((color) => color.product);
+//   setProductColor([...new Set(colors)]);
+//   };
+//   const filterByColor = (productColor, checked) =>{
+//     const newProductColor = [];
+//     if (checked){
+//       productList.forEach((color) => {
+//         if (productColor === color.product) {
+//           newProductColor.push(color);
+//         }
+//       });
+//       setProductColor(data.productList);
+//     }
+//   };
+//   // 
+  
+  
 
   const createBrandFilter = () => {
     const brands = data.productList.map((product) => product.brand);
@@ -69,6 +101,29 @@ const Catalog = () => {
                   );
                 })}
               </form>
+
+
+{/* 
+              
+              <form>
+                {productColor.map((el, id) => {
+                  return (
+                    <div key={id} className="mb-3">
+                      <input
+                        id={el}
+                        type="checkbox"
+                        checked={el.value}
+                        onChange={(e) => filterByColor(el, e.target.checked)}
+                      />
+                      <label htmlFor={el}>{el}</label>
+                    </div>
+                  );
+                })}
+              </form>
+               */}
+
+
+
             </div>
           </div>
         </div>
