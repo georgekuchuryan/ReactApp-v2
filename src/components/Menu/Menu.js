@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { NavLink } from "react-router-dom";
 import styles from "./Menu.module.scss";
 
 const Menu = () => {
-  const menuList = ["Home", "Features", "Pricing", "FAQs", "About"];
+  const menuList = ["Home", "Catalog", "Pricing", "FAQs", "About"];
 
   return (
     <div className={styles.Menu}>
@@ -11,9 +12,9 @@ const Menu = () => {
         {menuList.map((item) => {
           return (
             <li key={item}>
-              <a href="#" className="nav-link px-2 text-white" >
+              <NavLink to={item} className="nav-link px-2 text-white" >
                 {item}
-              </a>
+              </NavLink>
             </li>
           );
         })}
