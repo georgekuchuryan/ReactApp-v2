@@ -74,6 +74,7 @@ const Catalog = () => {
               return (
                 <div className="col" key={item.id}>
                   <CatalogItem
+                    id = {item.id}
                     url={item.url}
                     name={item.name}
                     color={item.color}
