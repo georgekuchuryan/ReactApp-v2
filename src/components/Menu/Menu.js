@@ -12,7 +12,7 @@ const Menu = () => {
         {menuList.map((item) => {
           return (
             <li key={item}>
-              <NavLink to={item} className="nav-link px-2 text-white" >
+              <NavLink to={item} className="nav-link px-2 text-white">
                 {item}
               </NavLink>
             </li>

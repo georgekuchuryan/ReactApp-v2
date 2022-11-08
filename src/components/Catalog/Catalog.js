@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { useParams, useNavigate } from "react-router-dom";
 import styles from "./Catalog.module.scss";
 import CatalogItem from "../CatalogItem/CatalogItem";
 import CheckBox from "../checkBox/checkBox";
@@ -11,46 +11,45 @@ const Catalog = () => {
 
   const [brandListFilter, setBrandListFilter] = useState([]);
 
+  // //
+  //   const [productColor, setProductColor] = useState([]);
+  // //
 
-// // 
-//   const [productColor, setProductColor] = useState([]);
-// // 
-
-
-//     // 
-//   useEffect(() => {
-//     createColorFilter();
-//   }, []);
-// // 
+  //     //
+  //   useEffect(() => {
+  //     createColorFilter();
+  //   }, []);
+  // //
 
   useEffect(() => {
     createBrandFilter();
   }, []);
 
-// // 
-// const createColorFilter =() =>{
-//   const colors = data.productList.map((color) => color.product);
-//   setProductColor([...new Set(colors)]);
-//   };
-//   const filterByColor = (productColor, checked) =>{
-//     const newProductColor = [];
-//     if (checked){
-//       productList.forEach((color) => {
-//         if (productColor === color.product) {
-//           newProductColor.push(color);
-//         }
-//       });
-//       setProductColor(data.productList);
-//     }
-//   };
-//   // 
-  
-  
+  // //
+  // const createColorFilter =() =>{
+  //   const colors = data.productList.map((color) => color.product);
+  //   setProductColor([...new Set(colors)]);
+  //   };
+  //   const filterByColor = (productColor, checked) =>{
+  //     const newProductColor = [];
+  //     if (checked){
+  //       productList.forEach((color) => {
+  //         if (productColor === color.product) {
+  //           newProductColor.push(color);
+  //         }
+  //       });
+  //       setProductColor(data.productList);
+  //     }
+  //   };
+  //   //
 
   const createBrandFilter = () => {
     const brands = data.productList.map((product) => product.brand);
     setBrandListFilter([...new Set(brands)]);
   };
+
+  const navigate = useNavigate();
+  const goBack = () => navigate(-1);
 
   const filterByBrand = (brandName, checked) => {
     const newProductList = [];
@@ -60,13 +59,16 @@ const Catalog = () => {
         if (brandName === product.brand) {
           newProductList.push(product);
         }
-        });
+      });
       setProductList(newProductList);
     } else setProductList(data.productList);
   };
 
   return (
     <div className={styles.Catalog}>
+      <button className="atuin-btn" onClick={goBack}>
+        Go back
+      </button>
       <div className="album py-5 bg-light">
         <div className="container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -74,7 +76,7 @@ const Catalog = () => {
               return (
                 <div className="col" key={item.id}>
                   <CatalogItem
-                    id = {item.id}
+                    id={item.id}
                     url={item.url}
                     name={item.name}
                     color={item.color}
@@ -103,8 +105,7 @@ const Catalog = () => {
                 })}
               </form>
 
-
-{/* 
+              {/* 
               
               <form>
                 {productColor.map((el, id) => {
@@ -122,9 +123,6 @@ const Catalog = () => {
                 })}
               </form>
                */}
-
-
-
             </div>
           </div>
         </div>

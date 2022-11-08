@@ -5,66 +5,73 @@
       "brand": "Apple",
       "name": "Apple Iphone 14 Pro Max",
       "color": "Purple",
-      "memory size": "512 GB",
+      "memory_size": "512 GB",
       "display diagonal": "6.7",
       "material": "Ceramic Shield",
       "price": "70 000₴",
-      "url": "https://content2.rozetka.com.ua/goods/images/big/284924197.jpg"
+      "url": "https://content2.rozetka.com.ua/goods/images/big/284924197.jpg",
+      "description": "Екран (6.7, OLED (Super Retina XDR), 2796x1290) / Apple A16 Bionic / основна квадро-камера: 48 Мп + 12 Мп + 12 Мп + 12 Мп, фронтальна камера: 12 Мп / 512 ГБ вбудованої пам'яті / 3G / LTE / 5G / GPS / Nano-SIM / iOS 16"
     },
     {
       "id": 2,
       "brand": "Samsung",
       "name": "Samsung Galaxy Fold 4",
       "color": "Graygreen",
-      "memory size": "512 GB",
+      "memory_size": "512 GB",
       "display diagonal": "6.2",
       "material": "aluminum + glass",
       "price": "79 999₴",
-      "url": "https://content1.rozetka.com.ua/goods/images/big/292002198.jpg"
+      "url": "https://content1.rozetka.com.ua/goods/images/big/292002198.jpg",
+      "description": "Екран:6.9, 2460х1080, 90 Гц Камера на 3 модулі, 50 МП  Пам'ять:128 ГБ, + карта памяти. Процесор:Helio G88ОЗП:6 ГБАкумулятор:7000 мАгод. Корпус:пластик, 230 г, товщина 9 мм"
     },
     {
       "id": 3,
       "brand": "Xiaomi",
       "name": "Xiaomi Mi 11 Ultra",
       "color": "White",
-      "memory size": "512 GB",
+      "memory_size": "512 GB",
       "display diagonal": "6.81",
       "material": "Ceramic",
       "price": "44 581₴",
-      "url": "https://content.rozetka.com.ua/goods/images/big/288817287.jpg"
+      "url": "https://content.rozetka.com.ua/goods/images/big/288817287.jpg",
+      "description": "Смартфон  2 SIM  екран: 6,81  AMOLED  3200x1440  вбудована пам'ять: 256 ГБ  оперативна пам'ять: 12 ГБ  процесор: Qualcomm Snapdragon 888 + Adreno 660  ОС: Android 11  акумулятор: 5000 мАгод (незнімний)  камера: 50 (f / 1.95) + 48 (f / 2.2) + 48 Мп  колір: білий  NFC"
     },
     {
       "id": 4,
       "brand": "Huawei",
       "name": "Huawei P50 Pocket",
       "color": "White",
-      "memory size": "256 GB",
+      "memory_size": "256 GB",
       "display diagonal": "6.9",
       "material": "Ceramic + glass",
       "price": "43 420₴",
-      "url": "https://content1.rozetka.com.ua/goods/images/big/282509740.jpg"
+      "url": "https://content1.rozetka.com.ua/goods/images/big/282509740.jpg",
+      "description": "Смартфон  SIM + SIM або картка пам'яті  екран: 6,9 (внутрішній) + 1,04 (зовнішній)  OLED + OLED  2790x1188 (внутрішній) + 340x340 (зовнішній)  вбудована пам'ять: 256 ГБ  оперативна пам'ять: 8 ГБ  процесор: Qualcomm Snapdragon 888  ОС: EMUI 12  акумулятор: 4000 мАг (незнімний)  камера: 40 (f/1.8, ширококутна) + 13 (f/2.2, надширококутна) + 32 (f/1.8 ультраспектральний) Мп  колір: білий  NFC"
     },
     {
       "id": 5,
       "brand": "Apple",
       "name": "Apple iPhone 13 Pro Max",
       "color": "Alpine Green",
-      "memory size": "256 GB",
+      "memory_size": "256 GB",
       "display diagonal": "6.7",
       "material": "Ceramic + glass",
       "price": "48 999₴",
-      "url": "https://content1.rozetka.com.ua/goods/images/big/259416164.jpg"
+      "url": "https://content1.rozetka.com.ua/goods/images/big/259416164.jpg",
+      "description": "Екран (6.7, OLED (Super Retina XDR), 2778x1284) / Apple A15 Bionic / потрійна основна камера: 12 Мп + 12 Мп + 12 Мп, фронтальна камера: 12 Мп / 256 ГБ вбудованої пам'яті / 3G / LTE / 5G / GPS / Nano-SIM / iOS 15"
     },
     {
       "id": 6,
       "brand": "Samsung",
       "name": "Samsung Galaxy S21",
       "color": "Lavender",
-      "memory size": "128 GB",
+      "memory_size": "128 GB",
       "display diagonal": "6.4",
       "material": "Glass",
       "price": "24 999₴",
-      "url": "https://content.rozetka.com.ua/goods/images/big/245951562.jpg"
+      "url": "https://content.rozetka.com.ua/goods/images/big/245951562.jpg",
+      "description": "Екран (6.4, Dynamic AMOLED 2X, 2340x1080) / Qualcomm Snapdragon 888 (2.84 ГГц) / потрійна основна камера: 12 Мп + 12 Мп + 8 Мп, фронтальна 32 Мп / RAM 6 ГБ / 128 ГБ вбудованої пам'яті / 3G / LTE / 5G / GPS / підтримка 2 SIM-карток (Nano-SIM) / Android 11 / 4500 мА·год"
+
     }
   ]
 }

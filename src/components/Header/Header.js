@@ -6,7 +6,7 @@ const Header = () => (
   <div className={styles.Header}>
     <header className="p-3 text-bg-dark">
       <div className="container">
-        <div className={styles.logo}>Mobile Devices</div>
+        <div className={styles.logo}>Device Store №1</div>
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-start">
           <svg
             href="http://www.apple.com"

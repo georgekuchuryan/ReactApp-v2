@@ -5,7 +5,7 @@ import CheckBox from "../checkBox/checkBox";
 
 const MainPage = () => (
   <div className={styles.MainPage}>
-    <CheckBox/>
+    {/* <CheckBox/> */}
     <Catalog />
   </div>
 );

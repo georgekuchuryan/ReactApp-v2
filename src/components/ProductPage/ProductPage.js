@@ -1,34 +1,64 @@
-import React, {useEffect, useState} from 'react';
-import { useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import data from "./../../api/data.json";
+import styles from "../ProductPage/ProductPage.scss";
+import Catalog from "../Catalog/Catalog";
 
+const ProductPage = (item) => {
+  let { id } = useParams();
+  const catalog = Catalog;
+  const [product, setProduct] = useState("");
+  const navigate = useNavigate();
+  const goBack = () => navigate(-1);
 
-const ProductPage = () => {
-    let { id } = useParams();
+  useEffect(() => {
+    getProduct();
+  }, [id]);
 
-    const [product, setProduct] = useState('');
-    
-    useEffect(() => {
-        getProduct();
-    }, [id])
-    
-    const getProduct = () => {
-        const selectProduct = data.productList.find(item => +item.id === +id);
-        console.log('selectProduct', selectProduct);
-        setProduct(selectProduct);
-    };
-return(
-<div className="p-5 mb-4 bg-light rounded-3">
-    <div className="container-fluid py-5">
-        <h1 className="display-5 fw-bold">Custom jumbotron</h1>
-        <p className="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one
-            in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to
-            your liking.</p>
-        <button className="btn btn-primary btn-lg" type="button">Example button</button>
+  const getProduct = () => {
+    const selectProduct = data.productList.find((item) => +item.id === +id);
+
+    setProduct(selectProduct);
+    console.log(selectProduct);
+  };
+  return (
+    <div className="parent-div">
+      <button className="atuin-btn" onClick={goBack}>
+        Go back
+      </button>
+
+      <h1 className="product__title">
+        {" "}
+        Мобільний телефон <span className="red">{product.name} </span>
+        {product.color} {product.memory_size}
+      </h1>
+
+      <div className="card">
+        <div className="img">
+          <img className="imgPhone" src={product.url} alt="phone" />
+        </div>
+        <div class="content-wrap">
+          <p class="price">{product.price}</p>
+          <h3 class="title">{product.brand}</h3>
+          <p class="description">{product.description} </p>
+          <div class="toggle-wrap">
+            <a className="toggle-buy" href="#">
+              BUY
+            </a>
+            <button className="toggle-info">Add to bag!</button>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="img">
+      <img className="imgPhone" src={product.url} alt="phone"/>
+      <div>
+      <p className="text-phone">{product.description}</p>
+      
+        </div>
+      </div> */}
     </div>
-</div>
-)
-}
-
+  );
+};
 
 export default ProductPage;
