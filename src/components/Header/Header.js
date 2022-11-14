@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./Header.module.scss";
 import Menu from "../Menu/Menu";
+import Timer from "../Timer/Timer";
 
 const Header = () => (
+ 
   <div className={styles.Header}>
-    <header className="p-3 text-bg-dark">
+    <header className="p-3 text-bg-dark ">
       <div className="container">
         <div className={styles.logo}>Device Store №1</div>
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-start">
@@ -33,6 +35,7 @@ const Header = () => (
           </div>
         </div>
       </div>
+      <Timer />
     </header>
   </div>
 );

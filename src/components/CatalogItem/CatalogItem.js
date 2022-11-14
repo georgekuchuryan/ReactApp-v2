@@ -16,7 +16,7 @@ const CatalogItem = (props) => {
               <button
                 type="button"
                 className="btn btn-sm btn-outline-secondary view"
-                onClick={() => navigate(`${props.id}`)}
+                onClick={() => navigate(`/Catalog/${props.id}`)}
               >
                 View
               </button>

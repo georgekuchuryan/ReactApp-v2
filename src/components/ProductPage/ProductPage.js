@@ -4,6 +4,7 @@ import data from "./../../api/data.json";
 import styles from "../ProductPage/ProductPage.scss";
 import Catalog from "../Catalog/Catalog";
 
+
 const ProductPage = (item) => {
   let { id } = useParams();
   const catalog = Catalog;
