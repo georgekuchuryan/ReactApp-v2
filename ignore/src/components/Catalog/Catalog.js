@@ -11,37 +11,37 @@ const Catalog = () => {
 
   const [brandListFilter, setBrandListFilter] = useState([]);
 
-  //
-    const [productColor, setProductColor] = useState([]);
-  //
+  // //
+  //   const [productColor, setProductColor] = useState([]);
+  // //
 
-      //
-    useEffect(() => {
-      createColorFilter();
-    }, []);
-  //
+  //     //
+  //   useEffect(() => {
+  //     createColorFilter();
+  //   }, []);
+  // //
 
   useEffect(() => {
     createBrandFilter();
   }, []);
 
-  //
-  const createColorFilter =() =>{
-    const colors = data.productList.map((color) => color.color);
-    setProductColor([...new Set(colors)]);
-    };
-    const filterByColor = (productColor, checked) =>{
-      const newProductColor = [];
-      if (checked){
-        productList.forEach((color) => {
-          if (productColor === color.color) {
-            newProductColor.push(color);
-          }
-        });
-        setProductColor(data.productList);
-      }
-    };
-    //
+  // //
+  // const createColorFilter =() =>{
+  //   const colors = data.productList.map((color) => color.product);
+  //   setProductColor([...new Set(colors)]);
+  //   };
+  //   const filterByColor = (productColor, checked) =>{
+  //     const newProductColor = [];
+  //     if (checked){
+  //       productList.forEach((color) => {
+  //         if (productColor === color.product) {
+  //           newProductColor.push(color);
+  //         }
+  //       });
+  //       setProductColor(data.productList);
+  //     }
+  //   };
+  //   //
 
   const createBrandFilter = () => {
     const brands = data.productList.map((product) => product.brand);
@@ -105,12 +105,9 @@ const Catalog = () => {
                 })}
               </form>
 
+              {/* 
               
-              
-             
-              
-            </div> 
-             <form>
+              <form>
                 {productColor.map((el, id) => {
                   return (
                     <div key={id} className="mb-3">
@@ -125,6 +122,8 @@ const Catalog = () => {
                   );
                 })}
               </form>
+               */}
+            </div>
           </div>
         </div>
       </div>

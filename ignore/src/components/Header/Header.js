@@ -2,12 +2,9 @@ import React from "react";
 import styles from "./Header.module.scss";
 import Menu from "../Menu/Menu";
 import Timer from "../Timer/Timer";
-import { useNavigate } from "react-router-dom";
 
-const Header = () => {
-const navigate = useNavigate();
-
-  return (
+const Header = () => (
+ 
   <div className={styles.Header}>
     <header className="p-3 text-bg-dark ">
       <div className="container">
@@ -29,10 +26,10 @@ const navigate = useNavigate();
           <Menu />
 
           <div className="text-end">
-            <button onClick={() => navigate("/login")} type="button" className="btn btn-primary">
+            <button type="button" className="btn btn-primary">
               Login
             </button>
-            <button onClick={() => navigate("/SingUp")} type="button" className="btn btn-warning">
+            <button type="button" className="btn btn-warning">
               Sign-up
             </button>
           </div>
@@ -41,7 +38,7 @@ const navigate = useNavigate();
       <Timer />
     </header>
   </div>
-)};
+);
 
 Header.propTypes = {};
 
